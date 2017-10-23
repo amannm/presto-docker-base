@@ -1,6 +1,8 @@
 FROM amannm/java8-docker-base
 MAINTAINER Amann Malik <amannmalik@gmail.com>
 
+RUN apt-get update -y && apt-get install -y --no-install-recommends python-minimal
+
 ENV PRESTO_VERSION 0.187
 ENV PRESTO_HOME /usr/local/presto-server
 
